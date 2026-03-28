@@ -1,2 +1,6 @@
 # Amsterdam-House-Price-Regression
-Real estate price prediction model using Multiple Linear Regression with Ridge and Lasso regularization. Features hyperparameter tuning (GridSearchCV) and multicollinearity analysis.
+Real estate price prediction model using Multiple Linear Regression with Ridge and Lasso regularization. Features hyperparameter tuning (GridSearchCV) and multicollinearity analysis.  
+This project performs a predictive analysis of Amsterdam housing prices, following a complete Data Science workflow: from data cleaning to regression model optimization. The process began with a rigorous preprocessing stage where, starting from an initial dataset of 920 records, I handled missing values in the Price column and applied the IQR (Interquartile Range) method to remove 67 outliers (prices above €1,225,000). This resulted in a refined and balanced dataset of 849 observations.
+To streamline the modeling process, I dropped non-analytical text columns (Address, Zip) and addressed multicollinearity by removing the Room variable, which exhibited a strong correlation (0.74) with property Area. The core objective was to evaluate whether Ridge and Lasso Regularization could outperform standard Linear Regression. After optimizing the alpha hyperparameter via GridSearchCV, the results demonstrated that the Ridge model (alpha=0.1) provides superior stability and robustness, effectively preventing overfitting while maintaining high predictive accuracy.
+
+
